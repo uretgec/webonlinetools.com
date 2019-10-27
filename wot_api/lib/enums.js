@@ -1,0 +1,50 @@
+"use strict";
+
+// Tools
+exports.CRC1 = '64e289cb6e25ba0da33de9774e58ba48';
+exports.CRC8 = '6e71bdc829f7c428608f1b7640813da5';
+exports.CRC81WIRE = 'f960a5035ab0a5f1f620a83526f68dd0';
+exports.CRC16 = '9b564b62e9a1f5f0ca67c9817df5d6ca';
+exports.CRC16CCITT = '1ad88682e1974202988df3949598bd32';
+exports.CRC16MODBUS = '73f9a10e445381db64bca63d7f5a7763';
+exports.CRC16KERMIT = '983cedaf3e0851dd174f0f1985fdeae3';
+exports.CRC16XMODEM = 'a7fef19a02c6adac3e0488623c268469';
+exports.CRC24 = 'ba8932ff489e79fe306a5a3afbf0d5cd';
+exports.CRC32 = 'f621b09d23b9958b9879fbda7975fa01';
+exports.CRCJAM = '7ef5c719423b5280d83ecd4554bd2a34';
+exports.MD2 = '45c099513571316a2f7087cd72e20d2a';
+exports.MD4 = '0324720dec4de1359b9ba209f9ac7144';
+exports.MD5 = '2aad9380142ab0608b8497ec0bd510d9';
+exports.SHA1 = '36dfaaad0e8ca4ee4d8307f4dbd5d51c';
+exports.SHA3_224 = 'f9e0e066d54858b3032e83ab8b9c978e';
+exports.SHA3_256 = '432224376f3653b7cc09873779eec75c';
+exports.SHA3_384 = '977a204f4e82b21f82dcc0023968ef2c';
+exports.SHA3_512 = '67fe194b0e4f3f5508cb42dc04eb979c';
+exports.KECCAK_224 = '8736782ff8a4f4b88dca25d5ffe24b19';
+exports.KECCAK_256 = 'c059d018aabf3e75cf1ae37232f0386a';
+exports.KECCAK_384 = '045db382b5797cbd112ba97b28d99875';
+exports.KECCAK_512 = 'b8fe7e3e3835dcd550833a9748ea110f';
+exports.SHAKE_128 = '5085bcdb561670fc1ad596d9a4e089d4';
+exports.SHAKE_256 = '632184aac022d9130fae7276432c6eb7';
+exports.CSHAKE_128 = '5c13e6167103aad656a9e9453c17536d';
+exports.CSHAKE_256 = 'b22a92311291bab30da78869b8ed5d61';
+exports.KMAC128 = 'a361b11736c7badbd700a6fa431453a4';
+exports.KMAC256 = 'c01814b431b23182a583bfdf6109de75';
+exports.SHA224 = 'ea50096dbb58e6eda6ead81d4c277c42';
+exports.SHA256 = 'ce864f3cd551a9ffaf3af620ca6ecb6e';
+exports.SHA384 = '9242075a43846eda2e419318e654f2d2';
+exports.SHA512 = '2fd65ae5bd19fed549f4c5c81ba1d343';
+exports.SHA512_224 = '4c77b59cfa34a49ed06da44bed8595c3';
+exports.SHA512_256 = '9b40d738bf895ad9cad4b3e07c938364';
+
+exports.BASE32_ENCODE = '5234dbb4c82d3ba0ffd51d321e07af39';
+exports.BASE32_DECODE = '9e4e5f9190d47d00d69d4571258e712c';
+exports.BASE64_ENCODE = 'a47bfaf900633d48d574144de21334f7';
+exports.BASE64_DECODE = '01dde502ccb3ebf06d3d60aa94c8fa1c';
+exports.HTML_ENCODE = 'a43b42ee7b4ba08ce163a2e42c0a96a2';
+exports.HTML_DECODE = '0a64b2513d09fe917f5c2444701e08ef';
+exports.URI_ENCODE = 'a5d106b772014b26e1b185b4a79ab011';
+exports.URI_DECODE = '51e0aef729c1ed32f3e5f3a828d1a57e';
+
+exports.CRON_PARSER = '4588df311d67c90612b6c1273874cf34';
+exports.URL_PARSER = '68bb4f2e9bf89046909c0e7be1c19181';

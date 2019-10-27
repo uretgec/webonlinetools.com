@@ -1,0 +1,13 @@
+{
+  "name": "webonlinetools-api",
+  "version": "0.0.1",
+  "author": "uretgec",
+  "description": "For Web Developers&Programmers",
+  "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "^1.18.2",
+    "ajv": "^6.1.0",
+    "jsonwebtoken": "^8.1.1",
+    "redis": "^2.8.0"
+  }
+}
