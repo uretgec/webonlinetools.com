@@ -1,0 +1,43 @@
+{% extends '../Layout/base.layout.twig' %}
+
+{% block body %}
+    <div class="items">
+        <h1 class="subhead">Account: {{ result.title|default('NEW') }}</h1>
+
+        {#<aside class="pure-message message-success">
+            <p><strong>SUCCESS</strong>: Success message.</p>
+        </aside>
+        <aside class="pure-message message-error">
+            <p><strong>ERROR</strong>: Error message.</p>
+        </aside>
+        <aside class="pure-message message-warning">
+            <p><strong>WARNING</strong>: Warning message.</p>
+        </aside>#}
+        <form action="{{ routes.ACCOUNT_POST }}" method="post" autocomplete="off" class="pure-form pure-form-stacked">
+            <fieldset>
+
+                <label for="fullname">Full Name</label>
+                <input id="fullname" type="text" placeholder="Full Name" class="pure-input-1" value="">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" class="pure-input-1" value="">
+
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="Username" class="pure-input-1" value="">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" class="pure-input-1" value="">
+
+                <hr>
+                <label for="status">Status</label>
+                <select id="status" name="status" class="pure-input-1">
+                    <option value="1">Passive</option>
+                    <option value="2">Active</option>
+                </select>
+
+                <input type="hidden" name="id" value="{{ result.id|default('') }}">
+                <button type="submit" class="pure-button button-success">Save</button>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

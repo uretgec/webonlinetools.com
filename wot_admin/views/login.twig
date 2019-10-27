@@ -1,0 +1,27 @@
+{% extends 'Layout/login.layout.twig' %}
+
+{% block body %}
+    <div class="items">
+        <h1 class="subhead">Login</h1>
+        {#<aside class="pure-message message-success">#}
+        {#<p><strong>SUCCESS</strong>: Success message.</p>#}
+        {#</aside>#}
+        {#<aside class="pure-message message-error">#}
+        {#<p><strong>ERROR</strong>: Error message.</p>#}
+        {#</aside>#}
+        {#<aside class="pure-message message-warning">#}
+        {#<p><strong>WARNING</strong>: Warning message.</p>#}
+        {#</aside>#}
+        <form action="{{ routes.LOGIN_CHECK }}" method="post" autocomplete="off" class="pure-form pure-form-stacked">
+            <fieldset>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" class="pure-input-1" value="">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" class="pure-input-1" value="">
+
+                <button type="submit" class="pure-button button-success">Sign in</button>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

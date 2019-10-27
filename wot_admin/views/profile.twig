@@ -1,0 +1,30 @@
+{% extends 'Layout/base.layout.twig' %}
+
+{% block body %}
+    <div class="items">
+        <h1 class="subhead">Profile: {{ result.fullname }}</h1>
+
+        {#<aside class="pure-message message-success">
+            <p><strong>SUCCESS</strong>: Success message.</p>
+        </aside>
+        <aside class="pure-message message-error">
+            <p><strong>ERROR</strong>: Error message.</p>
+        </aside>
+        <aside class="pure-message message-warning">
+            <p><strong>WARNING</strong>: Warning message.</p>
+        </aside>#}
+        <form action="{{ routes.PROFILE_POST }}" method="post" autocomplete="off" class="pure-form pure-form-stacked">
+            <fieldset>
+
+                <label for="fullname">Full Name</label>
+                <input id="fullname" type="text" placeholder="Full Name" class="pure-input-1" value="">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" class="pure-input-1" value="">
+
+                <input type="hidden" name="id" value="{{ result.id }}">
+                <button type="submit" class="pure-button button-success">Save</button>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

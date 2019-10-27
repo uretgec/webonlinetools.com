@@ -1,0 +1,12 @@
+{
+  "name": "wot-admin",
+  "version": "0.0.1",
+  "author": "fikiruretgeci",
+  "description": "Wot Admin Panel",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "body-parser": "^1.18.2",
+    "twig": "^1.10.5"
+  }
+}

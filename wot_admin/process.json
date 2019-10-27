@@ -1,0 +1,30 @@
+{
+  "apps" : [
+    {
+      "name" :	"wot_admin",
+      "script" : "index.js",
+      "env": {
+        "NODE_ENV": "development",
+        "WOT_PORT": 8444,
+        "WOT_HOST": "localhost",
+        "WOT_DOMAIN": "http://webonlinetools.locals",
+        "WOT_SECRET": "",
+        "WOT_COOKIE_LIFETIME": 86400
+      },
+      "env_production" : {
+        "NODE_ENV": "production",
+        "WOT_PORT": 8445,
+        "WOT_HOST": "localhost",
+        "WOT_DOMAIN": "http://webonlinetools.com",
+        "WOT_SECRET": "",
+        "WOT_COOKIE_LIFETIME": 86400
+      },
+      "watch" : false,
+      "ignore_watch" : ["node_modules"],
+      "watch_options" : {
+        "followSymlinks" : false
+      },
+      "max_memory_restart": "100M"
+    }
+  ]
+}

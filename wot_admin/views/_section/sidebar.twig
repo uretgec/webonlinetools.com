@@ -1,0 +1,18 @@
+<div class="sidebar pure-u-1 pure-u-md-3-24">
+    <div id="menu">
+        <div class="pure-menu">
+            <p class="pure-menu-heading">
+                Pure Admin
+                <a href="{{ routes.LOGIN }}" class="pure-button button-xxsmall">OUT &raquo;</a>
+            </p>
+            <ul class="pure-menu-list">
+                <li class="{% if section == 'dashboard' %}pure-menu-selected{% endif %}"><a href="{{ routes.DASHBOARD }}" class="pure-menu-link">Dashboard</a></li>
+                <li class="{% if section == 'postlist' %}pure-menu-selected{% endif %}"><a href="{{ routes.POST_LIST|replace({':page?':1}) }}" class="pure-menu-link">Posts List</a></li>
+                <li class="{% if section == 'pagelist' %}pure-menu-selected{% endif %}"><a href="{{ routes.PAGE_LIST|replace({':page?':1}) }}" class="pure-menu-link">Pages List</a></li>
+                <li class="{% if section == 'optionlist' %}pure-menu-selected{% endif %}"><a href="{{ routes.OPTION_LIST|replace({':page?':1}) }}" class="pure-menu-link">Options List</a></li>
+                <li class="{% if section == 'accountlist' %}pure-menu-selected{% endif %}"><a href="{{ routes.ACCOUNT_LIST|replace({':page?':1}) }}" class="pure-menu-link">Accounts List</a></li>
+                <li class="{% if section == 'profile' %}pure-menu-selected{% endif %} menu-item-divided"><a href="{{ routes.PROFILE_GET }}" class="pure-menu-link">Profile</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

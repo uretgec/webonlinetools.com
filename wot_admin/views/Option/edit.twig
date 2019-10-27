@@ -1,0 +1,75 @@
+{% extends '../Layout/base.layout.twig' %}
+
+{% block body %}
+    <div class="items">
+        <h1 class="subhead">Option: {{ result.title|default('NEW') }}</h1>
+
+        <div id="wot_result"></div>
+        <form id="wot_form" action="{{ routes.OPTION_POST|replace({':id':result.id|default('new')}) }}" method="post" autocomplete="off" class="pure-form pure-form-stacked">
+            <fieldset>
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" placeholder="Title" class="pure-input-1" value="{{ result.title|default() }}">
+
+                <label for="name">Option Name</label>
+                <select id="name" name="name" class="pure-input-1">
+                    <option {% if result.name == "main" %}selected="selected"{% endif %} value="main">Main Options</option>
+                </select>
+
+                <label for="theme">Theme</label>
+                <select id="theme" name="theme" class="pure-input-1">
+                    <option {% if result.theme == "pure-link" %}selected="selected"{% endif %} value="pure-link">Pure Link</option>
+                </select>
+
+                <label for="version">Version</label>
+                <input id="version" name="version" type="text" placeholder="Version" class="pure-input-1" value="{{ result.version|default() }}">
+
+                <hr>
+                <label for="website_title">Title</label>
+                <input id="website_title" name="website[title]" type="text" placeholder="Website Title" class="pure-input-1" value="{{ result.website.title|default() }}">
+
+                <label for="website_sub_title">Sub Title</label>
+                <input id="website_sub_title" name="website[sub_title]" type="text" placeholder="Sub Title" class="pure-input-1" value="{{ result.website.sub_title|default() }}">
+
+                <label for="website_url">Website Url</label>
+                <input id="website_url" name="website[url]" type="text" placeholder="http://" class="pure-input-1" value="{{ result.website.url|default() }}">
+
+                <hr>
+                <label for="google_analytics">Google Analytics</label>
+                <input id="google_analytics" name="google[analytics]" type="text" placeholder="Google Analytics Code" class="tags pure-input-1" value="{{ result.google.analytics|default() }}">
+
+                <label for="google_verification">Google Verification</label>
+                <input id="google_verification" name="google[verification]" type="text" placeholder="Google Verification Code" class="pure-input-1" value="{{ result.google.verification|default() }}">
+
+                <hr>
+                <label for="meta_title">Meta Title</label>
+                <input id="meta_title" name="meta[title]" type="text" placeholder="Meta Title" class="pure-input-1" value="{{ result.meta.title|default() }}">
+
+                <label for="meta_description">Meta Description</label>
+                <input id="meta_description" name="meta[description]" type="text" placeholder="Meta Description" class="pure-input-1" value="{{ result.meta.description|default() }}">
+
+                <hr>
+                <label for="status">Status</label>
+                <select id="status" name="status" class="pure-input-1">
+                    <option {% if result.status == "1" %}selected="selected"{% endif %} value="1">Passive</option>
+                    <option {% if result.status == "2" %}selected="selected"{% endif %} value="2">Active</option>
+                </select>
+
+                <input id="id" type="hidden" name="id" value="{{ result.id|default('new') }}">
+                <button type="submit" class="pure-button button-success">Save</button>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}
+
+{% block footerJavascript %}
+    <script src="/js/main.js"></script>
+    <script src="/js/tags-input.js"></script>
+    <script src="/js/simplemde.min.js"></script>
+    <script type="text/javascript">
+        // Tags
+        [].forEach.call(document.querySelectorAll('input[type="tags"]'), tagsInput);
+
+        // Markdown Editor
+        new SimpleMDE({ element: document.getElementById("content"), spellChecker: false, forceSync: true });
+    </script>
+{% endblock %}

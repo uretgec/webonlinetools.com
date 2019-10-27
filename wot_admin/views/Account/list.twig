@@ -1,0 +1,47 @@
+{% extends '../Layout/base.layout.twig' %}
+
+{% block body %}
+    <div class="items">
+        <h1 class="subhead">Accounts List <a class="pure-button button-small button-secondary" href="{{ routes.ACCOUNT_LIST }}">Add New</a></h1>
+
+        {#<aside class="pure-message message-success">#}
+        {#<p><strong>SUCCESS</strong>: Success message.</p>#}
+        {#</aside>#}
+        {#<aside class="pure-message message-error">#}
+        {#<p><strong>ERROR</strong>: Error message.</p>#}
+        {#</aside>#}
+        {#<aside class="pure-message message-warning">#}
+        {#<p><strong>WARNING</strong>: Warning message.</p>#}
+        {#</aside>#}
+
+        <table class="pure-table pure-table-bordered">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% if result|length > 0 %}
+                {% for item in result %}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.title }}</td>
+                        <td>{{ item.updateAt|date }}</td>
+                        <td>{{ item.status }}</td>
+                        <td><a class="pure-button button-small button-success" href="{{ routes.ACCOUNT_GET|replace({':id': item.id}) }}">Edit</a></td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="5">No result found!</td>
+                </tr>
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
