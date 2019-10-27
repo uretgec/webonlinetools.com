@@ -1,0 +1,39 @@
+{% extends '../Layout/base.layout.twig' %}
+
+{% block body %}
+    <div class="items">
+        <h1 class="subhead">Posts List <a class="pure-button button-small button-secondary" href="{{ routes.POST_GET|replace({':id':'new'}) }}">Add New</a></h1>
+
+        <table class="pure-table pure-table-bordered">
+            <thead>
+            <tr>
+                <th>Order</th>
+                <th>#</th>
+                <th>Title</th>
+                <th>Update Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% if result|length > 0 %}
+                {% for item in result %}
+                <tr>
+                    <td>{{ item.ordered|default('-') }}</td>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.update_at|date }}</td>
+                    <td>{% if item.status == enumStatus.STATUS_PASSIVE %}Passive{% else %}Active{% endif %}</td>
+                    <td><a class="pure-button button-small button-success" href="{{ routes.POST_GET|replace({':id': item.id}) }}">Edit</a></td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="5">No result found!</td>
+                </tr>
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

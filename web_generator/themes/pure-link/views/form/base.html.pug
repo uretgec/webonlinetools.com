@@ -1,0 +1,13 @@
+.form
+  form#wot_form.pure-form.pure-form-stacked(action=current.form.action, method=current.form.method, autocomplete='off')
+    fieldset
+      label(for='message') Input
+      textarea#message.pure-input-1(rows='3' required="required" name="wot_string")
+      input(type="hidden" name="wot_type" value=current.id)
+      button#wot_send.pure-button.button-success(type='submit') Send
+
+  form.pure-form.pure-form-stacked(action="", method="", novalidate='', autocomplete="off")
+    fieldset
+      label(for="wot_result") Output
+      textarea(id='wot_result' class="pure-input-1" rows='3' onfocus='this.select();' onmouseup='return false;')
+      a#wot_copy.pure-button.button-info(href='#') Copy To Clipboard

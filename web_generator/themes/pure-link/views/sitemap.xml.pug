@@ -1,0 +1,6 @@
+extends layout/base.xml.pug
+
+block content
+  +sitemap(options.website.url, index, true)
+  +sitemap(options.website.url, posts, false)
+  +sitemap(options.website.url, pages, false)

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wot Admin Panel">
+    <title>WOT Admin Panel</title>
+
+    <link rel="stylesheet" href="/css/pure-min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    {% block headerStylesheet %}{% endblock %}
+    {% block headerJavascript %}{% endblock %}
+</head>
+<body>
+<div id="main" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-2">
+        <div class="header-large">
+            <h1>WOT Admin</h1>
+            <h2>WebOnlineTools Admin Panel</h2>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-1-2">
+        <div class="header-medium">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+</div>
+
+{% block footerStylesheet %}{% endblock %}
+{% block footerJavascript %}{% endblock %}
+</body>
+</html>

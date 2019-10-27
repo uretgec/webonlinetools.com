@@ -1,0 +1,26 @@
+extends layout/base.html.pug
+
+block content
+  .pure-g
+    .pure-u-1.pure-u-md-1-2
+      .content
+        h1.subhead #{current.title}
+        .post
+          .post-description
+            != current.content
+      .footer
+        .pure-menu.pure-menu-horizontal
+          +footer(pages)
+    .pure-u-1.pure-u-md-1-2
+      if current.comment === '2'
+        .comment
+          h1.subhead Comments
+          #disqus_thread
+
+block footerJavascript
+  //if current.comment === '2'
+  //  script.
+  //      var disqus_config = function () {
+  //          this.page.url = !{JSON.stringify(canonicalUrl)};  // Replace PAGE_URL with your page's canonical URL variable
+  //          this.page.identifier = !{JSON.stringify(current.slug)}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  //      };

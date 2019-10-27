@@ -1,0 +1,45 @@
+mixin sidebar(items, current)
+  ul
+    each item, index in items
+      if item.divided
+        li(class='divided') #{item.title}
+      else
+        li(class=item.slug === current.slug ? 'selected' : '')
+          a(href=item.slug data-title=item.slug) #{item.title}
+
+mixin footer(items)
+  ul
+    each item, index in items
+      li.pure-menu-item
+        a(class='pure-menu-link' href='/' + item.slug data-title=item.slug) #{item.title}
+    li.pure-menu-item
+      a(class='pure-menu-link' href='https://m.do.co/c/7d2b60c06d34' target="_blank" style="color:red;text-decoration:underline;font-weight:bold;") DigitalOcean
+
+mixin section(items)
+  ol
+    each item, index in items
+      li
+        | #{item.title} /
+        small #{item.sub_title ? ' ' + item.sub_title : ' Online Generator'}
+
+mixin sitemapSingle(baseurl, item, isHome)
+  url
+    loc #{baseurl}/#{isHome ? '' : item.slug}
+    lastmod #{new Date(item.updated_at*1000).toISOString()}
+    changefreq #{item.sitemap.freq}
+    priority #{item.sitemap.priority/10}
+
+mixin sitemap(baseurl, items, isHome)
+  each item, index in items
+    +sitemapSingle(baseurl, item, isHome)
+
+mixin form(type)
+  case type
+    when 'base'
+      include ../form/base.html.pug
+    when 'custom_1'
+      include ../form/custom_1.html.pug
+    when 'custom_2'
+      include ../form/custom_2.html.pug
+    when 'custom_3'
+      include ../form/custom_3.html.pug

@@ -1,0 +1,26 @@
+{
+  "apps" : [
+    {
+      "name" :	"wot_api",
+      "script" : "index.js",
+      "env": {
+        "NODE_ENV": "development",
+        "WOT_PORT": 8446,
+        "WOT_HOST": "localhost",
+        "WOT_DOMAIN": "http://webonlinetools.locals"
+      },
+      "env_production" : {
+        "NODE_ENV": "production",
+        "WOT_PORT": 8447,
+        "WOT_HOST": "127.0.0.1",
+        "WOT_DOMAIN": "http://webonlinetools.com"
+      },
+      "watch" : false,
+      "ignore_watch" : ["node_modules"],
+      "watch_options" : {
+        "followSymlinks" : false
+      },
+      "max_memory_restart": "100M"
+    }
+  ]
+}

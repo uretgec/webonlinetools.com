@@ -1,0 +1,10 @@
+{
+  "name": "webonlinetools-generator",
+  "version": "0.0.1",
+  "author": "uretgec",
+  "description": "Website generator",
+  "dependencies": {
+    "jstransformer-markdown-it": "^2.0.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

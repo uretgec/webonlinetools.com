@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wot Admin Panel">
+    <title>{{ title }} - WOT Admin Panel</title>
+
+    <link rel="stylesheet" href="/css/pure-min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    {% block headerStylesheet %}{% endblock %}
+    {% block headerJavascript %}{% endblock %}
+</head>
+<body>
+<div id="layout" class="pure-g">
+    {% include '_section/sidebar.twig' %}
+    <div class="content pure-u-1 pure-u-md-21-24">
+        <div class="header-small">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+</div>
+
+{% block footerStylesheet %}{% endblock %}
+{% block footerJavascript %}{% endblock %}
+</body>
+</html>

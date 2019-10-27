@@ -1,0 +1,54 @@
+include ../mixin/general.pug
+
+- var canonicalUrl = options.website.url + '/' + ((current.slug !== 'index') ? current.slug : '')
+
+doctype html
+html(lang='en')
+  head
+    title #{current.meta.title} - #{options.meta.title}
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name="google-site-verification" content=options.google.verification)
+    meta(name='description', content=current.meta.description ? current.meta.description : options.meta.description)
+    meta(property="og:title" content=current.meta.title ? current.meta.title : options.meta.title)
+    meta(property="og:site_name" content=options.website.title)
+    block meta
+
+    link(rel="canonical" href=canonicalUrl)
+    link(rel="alternate" href=canonicalUrl hreflang="en")
+    link(rel='stylesheet' href='/assets/css/pure-min.css')
+    block headerStylesheet
+    block headerJavascript
+  body
+    #layout
+      a#menuLink.menu-link(href='#sidebar')
+        span
+      #sidebar
+        .heading
+          h1
+            a(href='/') #{options.website.title}
+          h2 #{options.website.sub_title}
+        .menu
+          +sidebar(posts, current)
+      #content
+        block content
+    script(src='/assets/js/main.js')
+    block footerStylesheet
+    block footerJavascript
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=' + options.google.analytics)
+    script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', !{JSON.stringify(options.google.analytics)});
+    //if current.comment === '2'
+    //  script.
+    //      (function () { // DON'T EDIT BELOW THIS LINE
+    //          var d = document, s = d.createElement('script');
+    //          s.src = 'https://webonlinetools.disqus.com/embed.js';
+    //          s.setAttribute('data-timestamp', +new Date());
+    //          (d.head || d.body).appendChild(s);
+    //      })();
+    //  noscript
+    //    | Please enable JavaScript to view the
+    //    a(href='https://disqus.com/?ref_noscript') comments powered by Disqus.

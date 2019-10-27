@@ -1,0 +1,148 @@
+{% extends '../Layout/base.layout.twig' %}
+
+{% block body %}
+    <div class="items">
+        <h1 class="subhead">Page: {{ result.title|default('NEW') }}</h1>
+
+        <div id="wot_result"></div>
+        <form id="wot_form" action="{{ routes.PAGE_POST|replace({':id':result.id|default('new')}) }}" method="post" autocomplete="off" class="pure-form pure-form-stacked">
+            <fieldset>
+                <label for="order">Order</label>
+                <input id="order" name="ordered" type="number" placeholder="Order" class="pure-input-1" value="{{ result.ordered|default(1) }}">
+
+                <label for="template">Template</label>
+                <select id="template" name="template" class="pure-input-1">
+                    <option {% if result.template == "index" %}selected="selected"{% endif %} value="index">Main</option>
+                    <option {% if result.template == "post" %}selected="selected"{% endif %} value="post">Post</option>
+                    <option {% if result.template == "page" %}selected="selected"{% endif %} value="page">Page</option>
+                    <option {% if result.template == "error" %}selected="selected"{% endif %} value="error">Error</option>
+                </select>
+
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" placeholder="Title" class="pure-input-1" value="{{ result.title|default() }}">
+
+                <label for="slug">Slug</label>
+                <input id="slug" name="slug" type="text" placeholder="Slug" class="pure-input-1" value="{{ result.slug|default() }}">
+
+                <label for="sub_title">Sub Title</label>
+                <input id="sub_title" name="sub_title" type="text" placeholder="Sub Title" class="pure-input-1" value="{{ result.sub_title|default() }}">
+
+                <label for="content">Content</label>
+                <textarea id="content" name="content" class="content pure-input-1" rows="10">{{ result.content|default() }}</textarea>
+
+                <hr>
+                <label for="category">Category</label>
+                <input id="category" name="category" type="tags" placeholder="Category" class="tags pure-input-1" value="{{ result.category|default() }}">
+
+                <label for="tag">Tags</label>
+                <input id="tag" name="tag" type="tags" placeholder="Tags" class="pure-input-1" value="{{ result.tag|default() }}">
+
+                <hr>
+                <label for="meta_title">Meta Title</label>
+                <input id="meta_title" name="meta[title]" type="text" placeholder="Meta Title" class="pure-input-1" value="{{ result.meta.title|default() }}">
+
+                <label for="meta_description">Meta Description</label>
+                <input id="meta_description" name="meta[description]" type="text" placeholder="Meta Description" class="pure-input-1" value="{{ result.meta.description|default() }}">
+
+                <hr>
+                <label for="form_status">Form Status</label>
+                <select id="form_status" name="form[status]" class="pure-input-1">
+                    <option {% if result.form.status == "1" %}selected="selected"{% endif %} value="1">Passive</option>
+                    <option {% if result.form.status == "2" %}selected="selected"{% endif %} value="2">Active</option>
+                </select>
+
+                <label for="form_type">Form Type</label>
+                <select id="form_type" name="form[type]" class="pure-input-1">
+                    <option {% if result.form.type == "base" %}selected="selected"{% endif %} value="base">Base Form</option>
+                </select>
+
+                <label for="form_method">Form Method</label>
+                <select id="form_method" name="form[method]" class="pure-input-1">
+                    <option {% if result.form.method == "post" %}selected="selected"{% endif %} value="post">POST</option>
+                    <option {% if result.form.method == "get" %}selected="selected"{% endif %} value="get">GET</option>
+                </select>
+
+                <label for="form_action">Form Action</label>
+                <input id="form_action" name="form[action]" type="text" placeholder="Form Action" class="pure-input-1" value="{{ result.form.action|default() }}">
+
+                <hr>
+                <label for="sidebar_title">Sidebar Title</label>
+                <input id="sidebar_title" name="sidebar[title]" type="text" placeholder="Title" class="pure-input-1" value="{{ result.sidebar.title|default() }}">
+
+                <label for="sidebar_sub_title">Sidebar Sub Title</label>
+                <input id="sidebar_sub_title" name="sidebar[sub_title]" type="text" placeholder="Sub Title" class="pure-input-1" value="{{ result.sidebar.sub_title|default() }}">
+
+                <label for="sidebar_divided">Sidebar Divided</label>
+                <select id="sidebar_divided" name="sidebar[divided]" class="pure-input-1">
+                    <option {% if result.sidebar.divided == "1" %}selected="selected"{% endif %} value="1">Passive</option>
+                    <option {% if result.sidebar.divided == "2" %}selected="selected"{% endif %} value="2">Active</option>
+                </select>
+
+                <label for="sidebar_status">Sidebar Status</label>
+                <select id="sidebar_status" name="sidebar[status]" class="pure-input-1">
+                    <option {% if result.sidebar.status == "1" %}selected="selected"{% endif %} value="1">Passive</option>
+                    <option {% if result.sidebar.status == "2" %}selected="selected"{% endif %} value="2">Active</option>
+                </select>
+
+                <hr>
+                <label for="sitemap_freq">Sitemap Freq</label>
+                <select id="sitemap_freq" name="sitemap[freq]" class="pure-input-1">
+                    <option {% if result.sitemap.freq == "hourly" %}selected="selected"{% endif %} value="hourly">Hourly</option>
+                    <option {% if result.sitemap.freq == "daily" %}selected="selected"{% endif %} value="daily">Daily</option>
+                    <option {% if result.sitemap.freq == "weekly" %}selected="selected"{% endif %} value="weekly">Weekly</option>
+                    <option {% if result.sitemap.freq == "monthly" %}selected="selected"{% endif %} value="monthly">Monthly</option>
+                    <option {% if result.sitemap.freq == "yearly" %}selected="selected"{% endif %} value="yearly">Yearly</option>
+                </select>
+
+                <label for="sitemap_priority">Sitemap Priority</label>
+                <select id="sitemap_priority" name="sitemap[priority]" class="pure-input-1">
+                    <option {% if result.sitemap.priority == "1" %}selected="selected"{% endif %} value="1">1</option>
+                    <option {% if result.sitemap.priority == "2" %}selected="selected"{% endif %} value="2">2</option>
+                    <option {% if result.sitemap.priority == "3" %}selected="selected"{% endif %} value="3">3</option>
+                    <option {% if result.sitemap.priority == "4" %}selected="selected"{% endif %} value="4">4</option>
+                    <option {% if result.sitemap.priority == "5" %}selected="selected"{% endif %} value="5">5</option>
+                    <option {% if result.sitemap.priority == "6" %}selected="selected"{% endif %} value="6">6</option>
+                    <option {% if result.sitemap.priority == "7" %}selected="selected"{% endif %} value="7">7</option>
+                    <option {% if result.sitemap.priority == "8" %}selected="selected"{% endif %} value="8">8</option>
+                    <option {% if result.sitemap.priority == "9" %}selected="selected"{% endif %} value="9">9</option>
+                    <option {% if result.sitemap.priority == "10" %}selected="selected"{% endif %} value="10">10</option>
+                </select>
+
+                <label for="sitemap_status">Sitemap Status</label>
+                <select id="sitemap_status" name="sitemap[status]" class="pure-input-1">
+                    <option {% if result.sitemap.status == "1" %}selected="selected"{% endif %} value="1">Passive</option>
+                    <option {% if result.sitemap.status == "2" %}selected="selected"{% endif %} value="2">Active</option>
+                </select>
+
+                <hr>
+                <label for="comment">Comment</label>
+                <select id="comment" name="comment" class="pure-input-1">
+                    <option {% if result.comment == "1" %}selected="selected"{% endif %} value="1">Passive</option>
+                    <option {% if result.comment == "2" %}selected="selected"{% endif %} value="2">Active</option>
+                </select>
+
+                <label for="status">Status</label>
+                <select id="status" name="status" class="pure-input-1">
+                    <option {% if result.status == "1" %}selected="selected"{% endif %} value="1">Passive</option>
+                    <option {% if result.status == "2" %}selected="selected"{% endif %} value="2">Active</option>
+                </select>
+
+                <input id="id" type="hidden" name="id" value="{{ result.id|default('new') }}">
+                <button type="submit" class="pure-button button-success">Save</button>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}
+
+{% block footerJavascript %}
+    <script src="/js/main.js"></script>
+    <script src="/js/tags-input.js"></script>
+    <script src="/js/simplemde.min.js"></script>
+    <script type="text/javascript">
+        // Tags
+        [].forEach.call(document.querySelectorAll('input[type="tags"]'), tagsInput);
+
+        // Markdown Editor
+        new SimpleMDE({ element: document.getElementById("content"), spellChecker: false, forceSync: true });
+    </script>
+{% endblock %}
