@@ -1,0 +1,35 @@
+{
+    "ordered": "46",
+    "template": "post",
+    "title": "Crontab Generator",
+    "slug": "crontab-generator",
+    "sub_title": "Cron Schedule Expressions",
+    "content": "The software utility cron is a time-based job scheduler in Unix-like computer operating systems. People who set up and maintain software environments use cron to schedule jobs to run periodically at fixed times, dates, or intervals\r\n\r\nThe quick and simple editor for cron schedule expressions.\r\n\r\nAn easy to use editor for crontab schedules.\r\n\r\n1. second (0 - 59, optional)\r\n2. minute (0 - 59)\r\n3. hour (0 - 23)\r\n4. day of month (1 - 31)\r\n5. month (1 - 12)\r\n6. day of week (0 - 7) (0 or 7 is Sun)\r\n\r\n\r\n**Supported Format**\r\n\r\n*\tany value\r\n\r\n,\tvalue list separator\r\n\r\n-\trange of values\r\n\r\n/\tstep values\r\n\r\n@yearly\t(non-standard)\r\n\r\n@annually\t(non-standard)\r\n\r\n@monthly\t(non-standard)\r\n\r\n@weekly\t(non-standard)\r\n\r\n@daily\t(non-standard)\r\n\r\n@hourly\t(non-standard)\r\n\r\n@reboot\t(non-standard)\r\n\r\n",
+    "category": "Crontab,Generator",
+    "tag": "Cron Jobs,Scheduling Tasks,Cron,Cron Expression,Crontab",
+    "meta": {
+        "title": "Crontab Online",
+        "description": "Crontab Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "custom_3",
+        "method": "post",
+        "action": "/api/v1/cron"
+    },
+    "sidebar": {
+        "title": "Crontab Generator",
+        "sub_title": "Crontab Online Generator",
+        "divided": "2",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "4588df311d67c90612b6c1273874cf34",
+    "updated_at": 1522537662
+}

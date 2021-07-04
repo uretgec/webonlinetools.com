@@ -1,0 +1,35 @@
+{
+    "ordered": "7",
+    "template": "post",
+    "title": "CRC-16 KERMIT Hash Generator",
+    "slug": "crc-16-kermit-hash-generator",
+    "sub_title": "",
+    "content": "Online generator CRC-16 KERMIT hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "CRC-16 KERMIT,CRC-16 KERMIT Generator,CRC-16 KERMIT Online",
+    "meta": {
+        "title": "CRC-16 KERMIT Online",
+        "description": "CRC-16 KERMIT Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "CRC-16 KERMIT Generator",
+        "sub_title": "CRC-16 KERMIT Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "983cedaf3e0851dd174f0f1985fdeae3",
+    "updated_at": 1519597279
+}

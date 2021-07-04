@@ -1,0 +1,35 @@
+{
+    "ordered": "33",
+    "template": "post",
+    "title": "SHA512 Hash Generator",
+    "slug": "sha512-hash-generator",
+    "sub_title": "",
+    "content": "Online generator SHA512 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "SHA512,SHA512 Generator,SHA512 Online",
+    "meta": {
+        "title": "SHA512 Online",
+        "description": "SHA512 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "SHA512 Generator",
+        "sub_title": "SHA512 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "2fd65ae5bd19fed549f4c5c81ba1d343",
+    "updated_at": 1519597745
+}

@@ -1,0 +1,35 @@
+{
+    "ordered": "37",
+    "template": "post",
+    "title": "Base32 Decode",
+    "slug": "base32-decode",
+    "sub_title": "Base32 Online Converter",
+    "content": "Easy online tool to Base32 decoder.\r\n\r\nUse the super simple online form below to decode your data\r\n\r\nUse this online form to decode plain text to base32 decode to plain text.",
+    "category": "Base,Decoder",
+    "tag": "Decoder,Base32 Decoder,Base32 Online Decoder",
+    "meta": {
+        "title": "Base32 Online",
+        "description": "Base32 Online Decoder"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/base"
+    },
+    "sidebar": {
+        "title": "Base32 Generator",
+        "sub_title": "Base32 Online Decoder",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "9e4e5f9190d47d00d69d4571258e712c",
+    "updated_at": 1519601029
+}

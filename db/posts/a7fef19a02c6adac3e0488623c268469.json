@@ -1,0 +1,35 @@
+{
+    "ordered": "8",
+    "template": "post",
+    "title": "CRC-16 XMODEM Hash Generator",
+    "slug": "crc-16-xmodem-hash-generator",
+    "sub_title": "",
+    "content": "Online generator CRC-16 XMODEM hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "CRC-16 XMODEM,CRC-16 XMODEM Generator,CRC-16 XMODEM Online",
+    "meta": {
+        "title": "CRC-16 XMODEM Online",
+        "description": "CRC-16 XMODEM Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "CRC-16 XMODEM Generator",
+        "sub_title": "CRC-16 XMODEM Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "a7fef19a02c6adac3e0488623c268469",
+    "updated_at": 1519597380
+}

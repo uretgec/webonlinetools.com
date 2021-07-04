@@ -1,0 +1,35 @@
+{
+    "ordered": "1",
+    "template": "post",
+    "title": "CRC-1 Hash Generator",
+    "slug": "crc-1-hash-generator",
+    "sub_title": "",
+    "content": "Online generator crc-1 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "CRC-1,CRC-1 Generator,CRC-1 Online",
+    "meta": {
+        "title": "CRC-1 Online",
+        "description": "CRC-1 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "CRC-1 Generator",
+        "sub_title": "CRC-1 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "64e289cb6e25ba0da33de9774e58ba48",
+    "updated_at": 1519596470
+}

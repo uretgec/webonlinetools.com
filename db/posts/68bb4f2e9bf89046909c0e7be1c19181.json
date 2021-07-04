@@ -1,0 +1,35 @@
+{
+    "ordered": "47",
+    "template": "post",
+    "title": "URL Parser",
+    "slug": "url-parser",
+    "sub_title": "Online URL Parser",
+    "content": "This simple tool lets you parse a URL into its individual components, i.e scheme, protocol, username, password, hostname, port, domain, subdomain, tld, path, query string, hash, etc. It also splits the query string into a human readable format and takes of decoding the parameters.\r\n\r\nOnline URL Parser is a tool helps you to parse URL, it provides url's components like scheme, password, username, protocol, port, domain, subdomain, hostname, tld, query string, path, hash, so it is also a Query String Splitter tool.\r\n\r\nParse Args:\r\n- protocol\r\n- slashes\r\n- auth\r\n- host\r\n- port\r\n- hostname\r\n- hash\r\n- search\r\n- query\r\n- pathname\r\n- path\r\n- href\r\n\r\n",
+    "category": "Parser",
+    "tag": "Url Parser,Online Parser,Url Extract,Query String,String Splitter,Url Splitter",
+    "meta": {
+        "title": "URL Parser Online",
+        "description": "URL Parser / Query String Splitter"
+    },
+    "form": {
+        "status": "2",
+        "type": "custom_3",
+        "method": "post",
+        "action": "/api/v1/url"
+    },
+    "sidebar": {
+        "title": "Url Parser",
+        "sub_title": "Url Online Parser",
+        "divided": "2",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "68bb4f2e9bf89046909c0e7be1c19181",
+    "updated_at": 1522537388
+}

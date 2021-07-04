@@ -1,0 +1,35 @@
+{
+    "ordered": "6",
+    "template": "post",
+    "title": "CRC-16 MODBUS Hash Generator",
+    "slug": "crc-16-modbus-hash-generator",
+    "sub_title": "",
+    "content": "Online generator CRC-16 MODBUS hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "CRC-16 MODBUS,CRC-16 MODBUS Generator,CRC-16 MODBUS Online",
+    "meta": {
+        "title": "CRC-16 MODBUS Online",
+        "description": "CRC-16 MODBUS Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "CRC-16 MODBUS Generator",
+        "sub_title": "CRC-16 MODBUS Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "73f9a10e445381db64bca63d7f5a7763",
+    "updated_at": 1519597157
+}

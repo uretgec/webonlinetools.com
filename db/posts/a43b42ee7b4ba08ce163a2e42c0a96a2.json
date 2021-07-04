@@ -1,0 +1,35 @@
+{
+    "ordered": "40",
+    "template": "post",
+    "title": "HTML Encode",
+    "slug": "html-encode",
+    "sub_title": "HTML Online Converter",
+    "content": "Easy online tool to HTML encoder.\r\n\r\nUse the super simple online form below to encode your data\r\n\r\nUse this online form to encode plain text to base32 encode to plain text.",
+    "category": "Base,Encoder",
+    "tag": "Encoder,HTML Encoder,HTML Online Encoder",
+    "meta": {
+        "title": "HTML Online",
+        "description": "HTML Online Encoder"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/base"
+    },
+    "sidebar": {
+        "title": "HTML Generator",
+        "sub_title": "HTML Online Encoder",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "a43b42ee7b4ba08ce163a2e42c0a96a2",
+    "updated_at": 1519601124
+}

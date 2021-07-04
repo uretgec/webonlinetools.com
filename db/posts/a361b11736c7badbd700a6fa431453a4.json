@@ -1,0 +1,35 @@
+{
+    "ordered": "28",
+    "template": "post",
+    "title": "KMAC128 Hash Generator",
+    "slug": "kmac128-hash-generator",
+    "sub_title": "",
+    "content": "Online generator KMAC128 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "KMAC128,KMAC128 Generator,KMAC128 Online",
+    "meta": {
+        "title": "KMAC128 Online",
+        "description": "KMAC128 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "KMAC128 Generator",
+        "sub_title": "KMAC128 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "a361b11736c7badbd700a6fa431453a4",
+    "updated_at": 1519597686
+}

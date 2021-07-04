@@ -1,0 +1,35 @@
+{
+    "ordered": "25",
+    "template": "post",
+    "title": "SHAKE-256 Hash Generator",
+    "slug": "shake-256-hash-generator",
+    "sub_title": "",
+    "content": "Online generator SHAKE-256 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "SHAKE-256,SHAKE-256 Generator,SHAKE-256 Online",
+    "meta": {
+        "title": "SHAKE-256 Online",
+        "description": "SHAKE-256 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "SHAKE-256 Generator",
+        "sub_title": "SHAKE-256 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "632184aac022d9130fae7276432c6eb7",
+    "updated_at": 1519597645
+}

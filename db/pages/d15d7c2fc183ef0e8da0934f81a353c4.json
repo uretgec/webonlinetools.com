@@ -1,0 +1,35 @@
+{
+    "ordered": "1",
+    "template": "index",
+    "title": "Web Online Tools",
+    "slug": "index",
+    "sub_title": "For Web Developers&Programmers",
+    "content": "For Web Developers And Programmers\r\n\r\nThis site web is a set of free online tools for helping development.\r\n\r\nIf you encounter a problem, you can write comments what do you want.\r\n\r\nIf your have suggestions, need for a tool ? please use the About Us page.\r\n\r\nThis web site will be regularly updated with new tools, so be sure to add this site to your bookmarks.\r\n\r\nList Of Web Online Tools:\r\n",
+    "category": "",
+    "tag": "Web,Online,Tools",
+    "meta": {
+        "title": "Web Online Tools",
+        "description": ""
+    },
+    "form": {
+        "status": "1",
+        "type": "base",
+        "method": "post",
+        "action": ""
+    },
+    "sidebar": {
+        "title": "",
+        "sub_title": "",
+        "divided": "1",
+        "status": "1"
+    },
+    "sitemap": {
+        "freq": "daily",
+        "priority": "10",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "d15d7c2fc183ef0e8da0934f81a353c4",
+    "updated_at": 1519761142
+}

@@ -1,0 +1,35 @@
+{
+    "ordered": "10",
+    "template": "post",
+    "title": "CRC-32 Hash Generator",
+    "slug": "crc-32-hash-generator",
+    "sub_title": "",
+    "content": "Online generator CRC-32 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "CRC-32,CRC-32 Generator,CRC-32 Online",
+    "meta": {
+        "title": "CRC-32 Online",
+        "description": "CRC-32 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "CRC-32 Generator",
+        "sub_title": "CRC-32 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "f621b09d23b9958b9879fbda7975fa01",
+    "updated_at": 1519597436
+}

@@ -1,0 +1,35 @@
+{
+    "ordered": "30",
+    "template": "post",
+    "title": "SHA224 Hash Generator",
+    "slug": "sha224-hash-generator",
+    "sub_title": "",
+    "content": "Online generator SHA224 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "SHA224,SHA224 Generator,SHA224 Online",
+    "meta": {
+        "title": "SHA224 Online",
+        "description": "SHA224 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "SHA224 Generator",
+        "sub_title": "SHA224 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "ea50096dbb58e6eda6ead81d4c277c42",
+    "updated_at": 1519597711
+}

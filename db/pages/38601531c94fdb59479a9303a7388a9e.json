@@ -1,0 +1,35 @@
+{
+    "ordered": "3",
+    "template": "error",
+    "title": "404 - Not Found!",
+    "slug": "404",
+    "sub_title": "No Way",
+    "content": "404 - Not Found!\r\n\r\nWe are looking for your page...but web can'f find it.",
+    "category": "",
+    "tag": "",
+    "meta": {
+        "title": "404 - Not Found!",
+        "description": "We are looking for your page...but web cant find it."
+    },
+    "form": {
+        "status": "1",
+        "type": "base",
+        "method": "post",
+        "action": ""
+    },
+    "sidebar": {
+        "title": "",
+        "sub_title": "",
+        "divided": "1",
+        "status": "1"
+    },
+    "sitemap": {
+        "freq": "yearly",
+        "priority": "1",
+        "status": "1"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "38601531c94fdb59479a9303a7388a9e",
+    "updated_at": 1519759656
+}

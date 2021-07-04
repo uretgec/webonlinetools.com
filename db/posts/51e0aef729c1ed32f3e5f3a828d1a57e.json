@@ -1,0 +1,35 @@
+{
+    "ordered": "43",
+    "template": "post",
+    "title": "URI Decoder",
+    "slug": "uri-decode",
+    "sub_title": "URI Online Converter",
+    "content": "Easy online tool to URI decoder.\r\n\r\nUse the super simple online form below to encode your data\r\n\r\nUse this online form to encode plain text to base64 encode to plain text.",
+    "category": "Base,Decoder",
+    "tag": "Decoder,URI Decoder,URI Online Decoder",
+    "meta": {
+        "title": "URI Online",
+        "description": "URI Online Decoder"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/base"
+    },
+    "sidebar": {
+        "title": "URI Generator",
+        "sub_title": "URI Online Decoder",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "51e0aef729c1ed32f3e5f3a828d1a57e",
+    "updated_at": 1519601346
+}

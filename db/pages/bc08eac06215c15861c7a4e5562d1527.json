@@ -1,0 +1,35 @@
+{
+    "ordered": "4",
+    "template": "error",
+    "title": "500 - Not Way!",
+    "slug": "500",
+    "sub_title": "No Way",
+    "content": "500 - Error\r\n\r\nooooops, something went wrong",
+    "category": "",
+    "tag": "",
+    "meta": {
+        "title": "500 - Not Way!",
+        "description": "Something went wrong"
+    },
+    "form": {
+        "status": "1",
+        "type": "base",
+        "method": "post",
+        "action": ""
+    },
+    "sidebar": {
+        "title": "",
+        "sub_title": "",
+        "divided": "1",
+        "status": "1"
+    },
+    "sitemap": {
+        "freq": "yearly",
+        "priority": "1",
+        "status": "1"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "bc08eac06215c15861c7a4e5562d1527",
+    "updated_at": 1519759677
+}

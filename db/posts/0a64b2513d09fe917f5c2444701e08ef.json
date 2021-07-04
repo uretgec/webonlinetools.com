@@ -1,0 +1,35 @@
+{
+    "ordered": "41",
+    "template": "post",
+    "title": "HTML Decoder",
+    "slug": "html-decode",
+    "sub_title": "HTML Online Converter",
+    "content": "Easy online tool to HTML decoder.\r\n\r\nUse the super simple online form below to encode your data\r\n\r\nUse this online form to encode plain text to base64 encode to plain text.",
+    "category": "Base,Decoder",
+    "tag": "Decoder,HTML Decoder,HTML Online Decoder",
+    "meta": {
+        "title": "HTML Online",
+        "description": "HTML Online Decoder"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/base"
+    },
+    "sidebar": {
+        "title": "HTML Generator",
+        "sub_title": "HTML Online Decoder",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "0a64b2513d09fe917f5c2444701e08ef",
+    "updated_at": 1519601254
+}

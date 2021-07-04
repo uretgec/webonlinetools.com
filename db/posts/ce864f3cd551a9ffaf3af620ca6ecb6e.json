@@ -1,0 +1,35 @@
+{
+    "ordered": "31",
+    "template": "post",
+    "title": "SHA256 Hash Generator",
+    "slug": "sha256-hash-generator",
+    "sub_title": "",
+    "content": "Online generator SHA256 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "SHA256,SHA256 Generator,SHA256 Online",
+    "meta": {
+        "title": "SHA256 Online",
+        "description": "SHA256 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "SHA256 Generator",
+        "sub_title": "SHA256 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "ce864f3cd551a9ffaf3af620ca6ecb6e",
+    "updated_at": 1519597723
+}

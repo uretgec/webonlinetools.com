@@ -1,0 +1,35 @@
+{
+    "ordered": "13",
+    "template": "post",
+    "title": "MD4 Hash Generator",
+    "slug": "md4-hash-generator",
+    "sub_title": "",
+    "content": "Online generator MD4 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "MD4,MD4 Generator,MD4 Online",
+    "meta": {
+        "title": "MD4 Online",
+        "description": "MD4 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "MD4 Generator",
+        "sub_title": "MD4 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "0324720dec4de1359b9ba209f9ac7144",
+    "updated_at": 1519597475
+}

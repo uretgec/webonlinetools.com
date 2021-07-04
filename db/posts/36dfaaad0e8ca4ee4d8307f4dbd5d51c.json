@@ -1,0 +1,35 @@
+{
+    "ordered": "15",
+    "template": "post",
+    "title": "SHA1 Hash Generator",
+    "slug": "sha1-hash-generator",
+    "sub_title": "",
+    "content": "Online generator SHA1 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "SHA1,SHA1 Generator,SHA1 Online",
+    "meta": {
+        "title": "SHA1 Online",
+        "description": "SHA1 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "SHA1 Generator",
+        "sub_title": "SHA1 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "36dfaaad0e8ca4ee4d8307f4dbd5d51c",
+    "updated_at": 1519597503
+}

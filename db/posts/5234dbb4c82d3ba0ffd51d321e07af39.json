@@ -1,0 +1,35 @@
+{
+    "ordered": "36",
+    "template": "post",
+    "title": "Base32 Encode",
+    "slug": "base32-encode",
+    "sub_title": "Base32 Online Converter",
+    "content": "Easy online tool to Base32 encoder.\r\n\r\nUse the super simple online form below to encode your data\r\n\r\nUse this online form to encode plain text to base32 encode to plain text.",
+    "category": "Base,Encoder",
+    "tag": "Encoder,Base32 Encoder,Base32 Online Encoder",
+    "meta": {
+        "title": "Base32 Online",
+        "description": "Base32 Online Encoder"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/base"
+    },
+    "sidebar": {
+        "title": "Base32 Generator",
+        "sub_title": "Base32 Online Encoder",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "5234dbb4c82d3ba0ffd51d321e07af39",
+    "updated_at": 1519600638
+}

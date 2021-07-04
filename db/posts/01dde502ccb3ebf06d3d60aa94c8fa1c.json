@@ -1,0 +1,35 @@
+{
+    "ordered": "39",
+    "template": "post",
+    "title": "Base64 Decode",
+    "slug": "base64-decode",
+    "sub_title": "Base64 Online Converter",
+    "content": "Easy online tool to Base64 decoder.\r\n\r\nUse the super simple online form below to encode your data\r\n\r\nUse this online form to encode plain text to base64 encode to plain text.",
+    "category": "Base,Decoder",
+    "tag": "Decoder,Base64 Decoder,Base64 Online Decoder",
+    "meta": {
+        "title": "Base64 Online",
+        "description": "Base64 Online Decoder"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/base"
+    },
+    "sidebar": {
+        "title": "Base64 Generator",
+        "sub_title": "Base64 Online Decoder",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "01dde502ccb3ebf06d3d60aa94c8fa1c",
+    "updated_at": 1519601160
+}

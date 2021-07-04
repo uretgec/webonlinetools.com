@@ -1,0 +1,35 @@
+{
+    "ordered": "3",
+    "template": "post",
+    "title": "CRC-8 1-WIRE Hash Generator",
+    "slug": "crc-8-1-wire-hash-generator",
+    "sub_title": "",
+    "content": "Online generator CRC-8 1-WIRE hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "CRC-8 1-WIRE,CRC-8 1-WIRE Generator,CRC-8 1-WIRE Online",
+    "meta": {
+        "title": "CRC-8 1-WIRE Online",
+        "description": "CRC-8 1-WIRE Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "CRC-8 1-WIRE Generator",
+        "sub_title": "CRC-8 1-WIRE Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "f960a5035ab0a5f1f620a83526f68dd0",
+    "updated_at": 1519597125
+}

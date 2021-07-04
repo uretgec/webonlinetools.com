@@ -1,0 +1,35 @@
+{
+    "ordered": "2",
+    "template": "page",
+    "title": "About Us",
+    "slug": "about-us",
+    "sub_title": "Online tools for everyone.",
+    "content": "We love online tools and want to made easier for everyone.\r\n\r\nIf you want to say something, please can write your comment to left side of website.\r\n\r\nThanks.",
+    "category": "",
+    "tag": "",
+    "meta": {
+        "title": "About Us",
+        "description": "Online tools for everyone."
+    },
+    "form": {
+        "status": "1",
+        "type": "base",
+        "method": "post",
+        "action": ""
+    },
+    "sidebar": {
+        "title": "",
+        "sub_title": "",
+        "divided": "1",
+        "status": "1"
+    },
+    "sitemap": {
+        "freq": "monthly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "1344c115a6e06e90a95b70dbf6865d67",
+    "updated_at": 1519593732
+}

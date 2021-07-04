@@ -1,0 +1,35 @@
+{
+    "ordered": "42",
+    "template": "post",
+    "title": "URI Encode",
+    "slug": "uri-encode",
+    "sub_title": "URI Online Converter",
+    "content": "Easy online tool to URI encoder.\r\n\r\nUse the super simple online form below to encode your data\r\n\r\nUse this online form to encode plain text to base32 encode to plain text.",
+    "category": "Base,Encoder",
+    "tag": "Encoder,URI Encoder,URI Online Encoder",
+    "meta": {
+        "title": "URI Online",
+        "description": "URI Online Encoder"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/base"
+    },
+    "sidebar": {
+        "title": "URI Generator",
+        "sub_title": "URI Online Encoder",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "a5d106b772014b26e1b185b4a79ab011",
+    "updated_at": 1519601135
+}

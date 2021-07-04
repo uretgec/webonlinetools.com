@@ -1,0 +1,35 @@
+{
+    "ordered": "32",
+    "template": "post",
+    "title": "SHA384 Hash Generator",
+    "slug": "sha384-hash-generator",
+    "sub_title": "",
+    "content": "Online generator SHA384 hash of string. This hash generator is useful for encoding passwords, credit cards numbers and other sensitive data. \r\n\r\nCRC (Cyclic Redundancy Check)",
+    "category": "Hash,Generator",
+    "tag": "SHA384,SHA384 Generator,SHA384 Online",
+    "meta": {
+        "title": "SHA384 Online",
+        "description": "SHA384 Hash Generator"
+    },
+    "form": {
+        "status": "2",
+        "type": "base",
+        "method": "post",
+        "action": "/api/v1/hash"
+    },
+    "sidebar": {
+        "title": "SHA384 Generator",
+        "sub_title": "SHA384 Online Hash Generator",
+        "divided": "1",
+        "status": "2"
+    },
+    "sitemap": {
+        "freq": "weekly",
+        "priority": "6",
+        "status": "2"
+    },
+    "comment": "2",
+    "status": "2",
+    "id": "9242075a43846eda2e419318e654f2d2",
+    "updated_at": 1519597734
+}

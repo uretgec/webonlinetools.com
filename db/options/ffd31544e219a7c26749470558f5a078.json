@@ -1,0 +1,22 @@
+{
+    "title": "Main Options",
+    "name": "main",
+    "theme": "pure-link",
+    "version": "1.0.0",
+    "website": {
+        "title": "WebOnlineTools.com",
+        "sub_title": "For Web Developers&Programmers Online Tools. CRC-32, MD5, SHA1, KMAC128, KMAC256, SHA512, Base32, Base64",
+        "url": "http://webonlinetools.com"
+    },
+    "google": {
+        "analytics": "UA-113720794-1",
+        "verification": "sRlRcw2pauA-wlbSXRDXacPyXF9u1HenwfnInqFTV40"
+    },
+    "meta": {
+        "title": "WebOnlineTools.com",
+        "description": "For Web Developers&Programmers"
+    },
+    "status": "2",
+    "id": "ffd31544e219a7c26749470558f5a078",
+    "updated_at": 1519587638
+}
